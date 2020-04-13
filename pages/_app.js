@@ -13,11 +13,9 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
     return (
       <ThemeProvider theme={theme}>
-        <UserProvider>
-          <Page>
-            <Component {...pageProps} />
-          </Page>
-        </UserProvider>
+        <Page>
+          <Component {...pageProps} />
+        </Page>
       </ThemeProvider>
     );
   }
