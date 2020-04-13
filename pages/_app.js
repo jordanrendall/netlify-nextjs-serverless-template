@@ -2,7 +2,6 @@ import App from 'next/app';
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import Page from '../components/Page';
-import { withApollo } from '../lib/apollo';
 const theme = {
   colors: {
     primary: '#0070f3',
@@ -24,4 +23,4 @@ class MyApp extends App {
   }
 }
 
-export default withApollo(MyApp);
+export default MyApp;
