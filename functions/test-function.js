@@ -1,6 +1,8 @@
-exports.handler = function (event, context, callback) {
-  callback(null, {
+exports.handler = function handler(event, context) {
+  console.log('received');
+
+  return {
     statusCode: 200,
     body: 'Hello, World',
-  });
+  };
 };
